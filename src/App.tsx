@@ -1,11 +1,20 @@
-import React from 'react';
-import Greetings from './Greetings';
+import React, {useState} from 'react';
+import ModalForm from './components/Modal';
 
 const App: React.FC = () => {
-  const onClick = (name: string) => {
-    console.log(`${name} says hello`);
-  };
-  return <Greetings name="Wook" onClick={onClick} />;
+  const [isOpen, isSetOpen] = useState(false)
+
+  return (
+    <>
+    <button onClick={()=>isSetOpen(!isOpen)}>버튼을 입력하세요</button>
+    <ModalForm
+      close={()=>{ isSetOpen(false)}} 
+      isOpen={isOpen}
+      size={'large'}
+      body={Array(4).fill("a").map((el,idx)=>el+idx)}
+    />
+    </>
+  )
 };
 
-export default App;
+export default App

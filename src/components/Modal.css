@@ -1,0 +1,19 @@
+/* Background */
+.background {position: fixed; z-index: 3000; right: 0px; bottom: 0px; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.4);}
+/* Display */
+.modal-display {position: fixed; z-index: 3001; display: flex; flex-direction: column; background: #e6ecf1; margin: 10px;}
+.modal-display-head {position: absolute; top: 0; height: 60px; width: 100%; background-color: #31415d;}
+/* margin 70 -> 60으로 바꾸며 confirm 모달에 영향을 줌 내부적으로 바꾸는게 맞다고 생각 */
+.modal-display-body {height: 100%; margin: 60px 10px 60px 10px; padding-bottom:10px; overflow: scroll;}
+.modal-display-body::-webkit-scrollbar {display: none !important;} /*hide scrollbar*/
+.modal-display-foot {position: absolute; bottom: 0; height: 60px; width: 100%; display: flex; justify-content: center; align-items: center; background-color: white;}
+.modal-display.large {top: 5%; right: 7%; bottom: 5%; left: 7%; min-width: 1000px; max-width: 2000px; min-height: 550px;}
+.modal-display.medium {top: 20%; right: 30%; bottom: 30%; left: 30%;}
+.modal-display.small {}
+/* ModalForm */
+/* DetailModal */
+.detail-modal-title {margin-left: 20px; height: 60px; line-height: 60px; color: white;}
+/* ConfirmModal */
+.confirm-modal-title {margin-left: 20px; height: 60px; line-height: 60px; color: white;}
+.confirm-modal-foot .button {margin-right: 10px;}
+/* TabModal */
