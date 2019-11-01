@@ -57,6 +57,12 @@ const StyledDisplay = styled.div`
     height: 60px; 
     width: 100%; 
     background-color: #31415d;
+    .modal-title{
+      margin: 0px 0px 0px 20px;
+      height: 60px; 
+      line-height: 60px; 
+      color: white;
+    }
   }
   .modal-display-body {
     height: 100%; 
